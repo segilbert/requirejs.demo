@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "requirejs.demo.spa", "requirejs.demo.spa/requirejs.demo.spa.csproj", "{A8FD8C12-A0F2-4AAF-A9F2-65DA562BF367}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "requirejs.demo.spa", "src/requirejs.demo.spa/requirejs.demo.spa.csproj", "{A8FD8C12-A0F2-4AAF-A9F2-65DA562BF367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
