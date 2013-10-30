@@ -1,0 +1,56 @@
+﻿@using System.Web.UI.WebControls
+@{
+    ViewBag.Title = "A Tech's Side of Things";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                by Sean Gilbert with technical contributions from Ben Elder and Orn Kristjansson
+            </p>
+        </div>
+    </section>
+}
+<h3>Are You Managing JS Dependencies like an Old Man?</h3>
+<p>
+    Over the past decade JavaScript standards and best practices have improved but dealing with dependencies and modularity is difficult. Frameworks like RequireJS (and others) remedy these issues and more. Don’t be mistaken, there are teeth and merit to this new shiny toy. Sit down, buckle up, and keep all hands and arms inside as we teleport through the JavaScript time machine!
+</p>
+<p>
+Travel back to year 2000. JavaScript’s main existence was validation. There was no notion of namespaces and all code lived in global space. After the dark ages, during the year "Revenge of the Sith" was the #1 movie and Single Page Application (SPA) was coined by Steve Yen, libraries like jQuery, Mootools and Prototype.js gained traction. Other best practices took root around closures, Immediately-Invoked Function Express (IIFE 1, 2), and namespaces. Presently, almost everyone knows best practice (learn & Pluralsight ):
+</p>
+<ol class="round">
+    <li class="one">
+        No augmenting built-in native objects
+        <br/>
+        <br/>
+    </li>
+
+    <li class="two">
+        Use namespaces to prevent polluting global namespace
+        <br/>
+        <br/>
+    </li>
+
+    <li class="three">
+        Leverage IIFE
+        <br/>
+        <br/>
+    </li>
+
+    <li class="four">
+        Use JavaScript Design Patterns - Module, Revealing Module, MVC, & MVVM.
+        <br/>
+        <br/>
+    </li>
+</ol>
+<p>
+    Using namespaces isolates code, creating a sandbox of sorts to avoid name collisions and better organized code. The drawback to namespaces is verbosity and namespace cluttering. As applications grow deep nested namespaces (DeloitteCore.Common.ServiceProxy.doAjaxPost(method, ..)) are common, sparking an urge to put all methods into a single object. All methods on a single object are a red flag, name collisions will increase. Even using noConflict() is error prone. Race back to current day, 2013, the year of "Iron Man 3" and release of VS 2013 forget all of this mess, instead work with a module system.
+</p>
+<p>
+    A viable option to support modularity in JavaScript is to leverage namespaces and IIFE. However, the dependency problem remains and JavaScript files must be referenced in proper order which is cumbersome and error prone. A better approach, leverage RequireJS, it implements clean, maintainable modern modular JavaScript patterns like AMD and CommonJS. In RequireJS code is separated into reusable modules targeting a single concern. Implement SOLID design principles and decouple dependencies in your SPA or ASP.NET MVC JavaScript for FREE using the modularity of RequireJS. RequireJS can handle custom and third party dependencies no matter the nesting using configuration and shims. One could argue RequireJS provides basic form of dependency injection (DI) or Service Location. Say goodbye 
+    <a href="@Url.Content("~/Content/FedNETCoP_Fall Edition Newsletter_A Tech's Side of Things_20131025.pdf")">read more…</a>
+</p>
